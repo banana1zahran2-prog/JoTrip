@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOTrip</title>
+    <link rel="shortcut icon" href="photos/shortcut_icon.png">
+    <link rel="stylesheet" href="style.css">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!---------------------------------------------------------------- nav bar------------------------------------------------------------------->
+    <div class="fixed-side-navbar">
+        <ul class="menu">
+            <li class="item"> <a class="link" href="#home"> <span>Intro</span> </a></li>
+            <li class="item"> <a class="link" href="#about"> <span>About </span> </a></li>
+            <li class="item"> <a class="link" href="#discover"> <span>Discover </span> </a></li>
+            <li class="item"> <a class="link" href="#"> <span>Intro</span>  </a></li>
+            <li class="item"> <a class="link" href="#contact-us"> <span>Contact Us</span>  </a></li>
+        </ul>
+    </div>
+     <!---------------------------------------------------------------- end nav bar------------------------------------------------------------------->
+      <!---------------------------------------------------------------- home------------------------------------------------------------------->
+    <!--video-->
+    <div class="home" id="home">
+        <video src="photos/intro.mp4" autoplay muted loop></video>
+        <div class="container">
+            <div class="first-content">
+                <h1>JOTrip</h1>
+                <span><em>Travel </em>and Tourism in Jordan</span> 
+                <div class="button">  <a href="#about">Discover More</a>  </div>
+            </div>
+        </div>
+    </div>
+     <!---------------------------------------------------------------- end home------------------------------------------------------------------->
+     <!----------------------------------------------------------------- about--------------------------------------------------------------------->
+     <div class="about" id="about">
+        <div class="title"> 
+            <p>about</p>
+            <h1>A Journey Through History, Naature, and Culture</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                
+                    <div class="col-md-6">
+                        <!--1-->
+                        <div class="one">
+                             <div class="img autoshow-img-right"> <img src="photos/about-1.png"> </div>
+                             <div class="text autoShow-text">
+                                <h3>Rich Historical and Cultural Heritage:</h3>
+                                <p>Jordan is home to remarkable historical sites, including Petra, Jerash, Kerak Castle, and Amman Citadel, which showcase its rich ancient heritage and cultural legacy.</p>
+                             </div>
+                        </div>
+                        <!--2--> 
+                        <div class="two">
+                             <div class="img autoshow-img-right"> <img src="photos/about-2.png"> </div>
+                             <div class="text autoShow-text">
+                                <h3>Outdoor Travel Adventures:</h3>
+                                <p>Jordan offers exciting outdoor adventures, from exploring Wadi Rum’s landscapes to hiking in Dana Biosphere Reserve, providing unforgettable nature experiences.</p>
+                             </div>
+                        </div>
+                    </div>
+                
+
+                <div class="col-md-6">
+                        <!--3-->
+                        <div class="three">
+                             <div class="img autoshow-img-left"> <img src="photos/about-3.png"> </div>
+                             <div class="text autoShow-text">
+                                <h3> Natural Beauty: </h3>
+                                <p>Jordan offers stunning natural landscapes, including Wadi Rum, the Dead Sea, and Dana Biosphere Reserve.</p>
+                             </div>
+                        </div>
+                    <!--4-->
+                        <div class="four">
+                             <div class="img autoshow-img-left"> <img src="photos/about-4.png"> </div>
+                             <div class="text autoShow-text">
+                                <h3>Adventure and Exploration:</h3>
+                                <p>Jordan offers unique experiences for travelers, from desert adventures in Wadi Rum to exploring natural wonders and hidden landscapes.</p>
+                             </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+     </div>
+      <!----------------------------------------------------------------- end about----------------------------------------------------------------->
+      <!----------------------------------------------------------------- discover----------------------------------------------------------------->
+      <div class="discover" id="discover">
+        <!------------------------------1 text&&button ------------------------------->
+        <div class="section-1">
+            <!-------text------->
+            <div class="text">
+                <h1>Explore New Horizons</h1>
+                <p>Your next adventure is waiting. Explore destinations chosen just for you and create unforgettable travel memories.</p>
+            </div>
+            <!-------button------->
+            <div class="button">
+                <button> <span>discover</span></button>
+            </div>
+        </div>
+        <!------------------------------2  imgs ------------------------------->
+        <div class="section-2">
+            <div class="imgs">
+                <img src="photos/discover-2.jpeg">
+                <img src="photos/discover-1.jpeg">
+                <img src="photos/discover-3.jpeg">
+                <img src="photos/discover-4.jpeg">
+                <img src="photos/discover-5.jpeg">
+            </div>
+        </div>
+        <!---------------------- when click button discover - 1 --------------------->
+        <div class="quiz-box" id="quizBox">
+            <div class="close">
+                <h2>Explore your tourist destination</h2>
+                <span class="icon"> <i class="fa-solid fa-xmark"></i> </span>
+            </div>
+            <div class="quiz-content">
+                <div class="question">
+                    <h4>budget:</h4>
+                    <div class="options">
+                        <label> <input type="radio" name="budget" value="low"> low </label>
+                        <label> <input type="radio" name="budget" value="medium"> medium </label>
+                        <label> <input type="radio" name="budget" value="high"> high </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <h4>weather:</h4>
+                    <div class="options">
+                        <label> <input type="radio" name="weather" value="warm"> warm </label>
+                        <label> <input type="radio" name="weather" value="cold"> cold </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <h4>activity:</h4>
+                    <div class="options">
+                        <label> <input type="radio" name="activity" value="walking"> walking </label>
+                        <label> <input type="radio" name="activity" value="adventure"> adventure </label>
+                        <label> <input type="radio" name="activity" value="relax"> relax </label>
+                        <label> <input type="radio" name="activity" value="food"> food </label>
+                    </div> 
+                </div>
+                <div class="question">
+                    <h4>type:</h4>
+                    <div class="options">
+                        <label> <input type="radio" name="type" value="history"> history </label>
+                        <label> <input type="radio" name="type" value="nature"> nature </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <h4>camping:</h4>
+                    <div class="options">
+                        <label> <input type="radio" name="camping" value="false"> false </label>
+                        <label> <input type="radio" name="camping" value="true"> true </label>
+                    </div>
+                </div>
+            </div>
+            <button class="submit" id="submit"> <span>submit</span> </button>
+        </div>
+        <!---------------------- when click button submit - 2 --------------------->
+        <div class="answer-quiz-box">
+            <div class="close">
+                <h2>Tourist attractions suited to your interests</h2>
+                <span class="icon"> <i class="fa-solid fa-xmark"></i> </span>
+            </div>
+                <div class="result" id="result"></div>
+        </div>
+      </div> 
+      <!---------------------------------------------------------------- end discover---------------------------------------------------------------->
+    
+
+
+     <!---------------------------------------------------------------- footer--------------------------------------------------------------------->
+    <footer>
+        <div class="container" id="contact-us">
+            <div class="row">
+                <!------------------------social media + contact us------------------------>
+                <div class="col-md-6 right">
+                    <!--------------contact us----------->
+                    <div class="contact-us">
+                        <h3>contact-us</h3>
+                        <p>
+                            Address: 3rd Circle, Jabal Amman <br>
+                            Tel: 0096264603360 <br>
+                            Fax: 0096264648465 <br>
+                            Postal Address: P.O. Box 224, Amman 11118 <br>
+                            Email:Contacts@mota.gov.jo
+                        </p>
+                    </div>
+                    <!---------social media-------------->
+                    <div class="wrapper">
+                        <!--facebook-->
+                        <div class="button">
+                            <div class="icon"><i class="fa-brands fa-facebook"></i></div>
+                            <a href="https://www.facebook.com/mota.jordan/?locale=ar_AR" target="_blank"> <span>facebook</span></a>
+                        </div>
+                        <!--Instagram-->
+                        <div class="button">
+                            <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+                            <a href="https://www.instagram.com/mota.jordan/?hl=ar" target="_blank"> <span>Instagram</span></a>
+                        </div>
+                        <!--Twitter-->
+                        <div class="button">
+                            <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+                            <a href="https://www.instagram.com/mota.jordan/?hl=ar" target="_blank"> <span>Twitter</span></a>
+                        </div>
+                        <!----------------logo------------------>
+                         <div class="logo"> <img src="photos/logo.png"> </div>
+                    </div>
+                  
+                <!----------------------------------------map--------------------------------------->
+                <div class="col-md-6">
+                    <div class="map">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.2811006248076!2d35.907527!3d31.9532699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca07c517e7b75%3A0x8249690f80346152!2z2YjYstin2LHYqSDYp9mE2LPZitin2K3YqSDZiNin2YTYotir2KfYsQ!5e0!3m2!1sar!2sjo!4v1784820489148!5m2!1sar!2sjo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <!---------------------------------------------------------------- end footer------------------------------------------------------------------->
+     <!---------------------------------------------------------------- under-footer------------------------------------------------------------------->
+    <div class="under-footer">
+        <div class="copyright"> <p> copyright &copy; 2026 JOTrip</p> </div>
+    </div>
+    <!---------------------------------------------------------------- end under-footer------------------------------------------------------------------->
+    <!-----------------------------------------------------------------scroll to top---------------------------------------------------------------------->
+    <div class="scroll-to-top">
+        <a href="#" class="top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
+    <!-----------------------------------------------------------------end scroll to top-------------------------------------------------------------------->
+                 
+    
+            
+                    
+                
+
+    <script src="data.js"></script>
+    <script src="answer_quiz.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
