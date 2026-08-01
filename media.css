@@ -1,0 +1,121 @@
+/***************************************************************موبايل**********************************************************************/
+@media (min-width:320px) and (max-width:767px){
+
+    /*----------------------------- home -----------------------------*/
+    .container .first-content h1{font-size:80px;}
+    .container .first-content span{font-size:30px;}
+    .container .first-content .button{margin-top:10%;}
+    /*----------------------------- about -----------------------------*/
+    .about{ height:auto; }
+    .about .title{
+        text-align:center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .about .container .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:-20px;
+        margin-top: 10%;
+    }
+    /*ترتيب الصور 1 3 2 4 */
+    .about .container .row .col-md-6:first-child{ display: contents;}
+    .about .container .row .col-md-6:last-child{ display: contents;}
+    .about .one{ order: 1; }
+    .about .three{ order: 2; }
+    .about .two{ order: 3; }
+    .about .four{ order: 4; }
+
+
+
+    .about .container .row .col-md-6 img{
+       width:99% !important;
+       height:auto;
+       transform:none !important;
+       margin:0 auto !important;
+    }
+    .about .container .row .col-md-6 .text{
+         position:static !important;
+         transform:none !important;
+         margin: -13% auto 0 auto; /*Top Right Bottom Left*/
+    }
+    .about .text h3{ font-size:16px; }
+    .about .container .row .col-md-6 p{ padding :0 10%; }
+}
+/*----------------------------- discover -------------------------------*/
+/*----------------------------- contact us -----------------------------*/
+    
+
+
+
+
+
+
+
+
+/*******************************************************************تابلت*******************************************************************/
+ @media (min-width:768px) and (max-width:899px){
+
+/*----------------------------- about -----------------------------*/
+.about{height: 220vh;}
+.about .container .row .col-md-6{margin-top: 10%;}
+/* 1 */
+.about .container .row .col-md-6 .one img{ margin-left:-30%;}
+.about .container .row .col-md-6 .one .text{
+    left:30%;
+    top:40%;
+}
+.about .container .row .col-md-6 .text h3{ font-size: 16px; }
+/* 2 */
+.about .container .row .col-md-6 .two{ transform:translateY(119%); }
+.about .container .row .col-md-6 .two img{ margin-left: -5%; }
+/* 3 */
+.about .container .row .col-md-6 .three,
+.about .container .row .col-md-6 .four{
+    margin-top:80%;
+}
+.about .container .row .col-md-6 .three img{ margin-left: -12%; }
+/*----------------------------- discover -------------------------------*/
+/*----------------------------- contact us -----------------------------*/
+
+ }
+
+
+
+
+
+/*****************************************************************تابلت*********************************************************************/
+ @media (min-width:900px) and (max-width:991px){
+/*----------------------------- about -----------------------------*/
+.about{height: 220vh;}
+.about .container .row .col-md-6{margin-top: 10%;}
+/* 1 */
+.about .container .row .col-md-6 .one img{ margin-left:-40%;}
+.about .container .row .col-md-6 .one .text{
+    left:10%;
+    top:40%;
+}
+.about .container .row .col-md-6 .text h3{ font-size: 16px; }
+/* 2 */
+.about .container .row .col-md-6 .two{ transform:translateY(119%); }
+.about .container .row .col-md-6 .two img{ margin-left: -20%; }
+/* 3 */
+.about .container .row .col-md-6 .three,
+.about .container .row .col-md-6 .four{
+    margin-top:80%;
+}
+.about .container .row .col-md-6 .three img{ margin-left: 12%; }
+.about .container .row .col-md-6 .three .text{top: 39%;}
+/*4*/
+.about .container .row .col-md-6 .four img{ margin-left: 22%; }
+.about .container .row .col-md-6 .four .text{
+    top: 15%;
+    left: 2%;
+}
+ }
+/*****************************************************************لابتوب**********************************************************************/
+ @media (min-width:992px){
+    .about .container .row .col-md-6 .text h3{ font-size: 23px;}
+ }
