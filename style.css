@@ -507,17 +507,62 @@
     text-shadow: 0 0 10px #fff , 0 0 20px #fff;
 }
 /******************************* result ***********************************/
+/******************************* output ***********************************/
 .discover .answer-quiz-box .result{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-top: 50px;
     margin-right: 60px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+/*card*/
+.discover .answer-quiz-box .result .place-card{ margin-bottom: 12%;}
+/*text*/
+.discover .answer-quiz-box .result .place-card h2{
     font-size: 30px;
     font-weight: 300;
     text-shadow: 0 0 5px;
 }
+.discover .answer-quiz-box .result .place-card p {
+    margin-top: -1%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/*img*/
+.discover .answer-quiz-box .result .place-card .img-result{ 
+    
+    overflow: hidden;
+    width: 50%;
+    display: flex;
+    margin: auto;
+    padding: 1%;
+    margin-top: -2%;
+    border-radius: 5px;
+}
+.discover .answer-quiz-box .result .place-card .img-result .img{
+    display: flex;
+    gap: 20px;
+    animation: scroll 9s linear infinite;
+}
+@keyframes scroll{
+    from{ transform: translateX(0); }
+    to{ transform: translateX(-50%); }
+}
+.discover .answer-quiz-box .result .place-card .img-result img{
+    width: 10vw;
+    height: 9vh;
+    object-fit: cover;
+    border-radius: 20%;
+}
+/*scroll*/
+.discover .answer-quiz-box{overflow-y: auto;}
+.discover .answer-quiz-box::-webkit-scrollbar{display: none;} /* اخفاء السكرول مع بقاء تأثيره*/
+
 /*------------------------------------------------------------------ end discover--------------------------------------------------------------- */
 /*-------------------------------------------------------------------- footer----------------------------------------------------------------- */
 footer{

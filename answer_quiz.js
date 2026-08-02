@@ -12,7 +12,7 @@ btn_submit.addEventListener("click",function(){
     answerQuizBox.style.display = "block";
     quiz_Box.style.display = "none";
 });
-/*****************************************************************************************/
+/*********************************************************************************************/
 
 /* اختيارات اليوزر داخل متغيرات */
 document.getElementById("submit").addEventListener("click",function(){
@@ -35,12 +35,35 @@ if(place.activity.includes(Activity)){ score++;}
 if(place.type.includes(Type)){ score++; }
 if(place.camping == Camping){ score++; }
 
-if(score>=4){ results.push(place.name) }
+if(score>=3){ results.push(place); }
 });
 
 
 
 /*عرض النتيجة */
-document.getElementById("result").innerHTML=results.join("<br>");
+let output = "";
+results.slice(0,6).forEach(place => {
+    output += `
+    <div class="place-card">
+        <h2>${place.name}</h2> <br>
+        <p>${place.description}</p> <br>
+        <div class="img-result">
+           <div class ="img"> 
+                <img src="${place.image[0]}">
+                <img src="${place.image[1]}">
+                <img src="${place.image[2]}">
+                    <!-- تكرار الصور -->
+                    <img src="${place.image[0]}">
+                    <img src="${place.image[1]}">
+                    <img src="${place.image[2]}">
+            </div>
+         </div>
+    </div>
+    `;
+});
+document.getElementById("result").innerHTML = output;
+
 
 });
+
+/*********************************************************************************************/
