@@ -465,7 +465,7 @@
 }
 .discover .quiz-box .quiz-content{
     width: 75%;
-    margin: 35px auto 0; /*top right+left bottom*/
+    margin: 5% auto 0; /*top right+left bottom*/
 }
 
 .discover .quiz-box .quiz-content .question{
@@ -514,7 +514,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 8%;
     margin-right: 60px;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -562,6 +562,12 @@
 /*scroll*/
 .discover .answer-quiz-box{overflow-y: auto;}
 .discover .answer-quiz-box::-webkit-scrollbar{display: none;} /* اخفاء السكرول مع بقاء تأثيره*/
+/*try again*/
+.discover .answer-quiz-box .result h5{
+    color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 0 10px 20px #000;
+}
 
 /*------------------------------------------------------------------ end discover--------------------------------------------------------------- */
 /*-------------------------------------------------------------------- footer----------------------------------------------------------------- */

@@ -27,21 +27,24 @@ document.getElementById("submit").addEventListener("click",function(){
 /* نقارن الاختيارات مع الاماكن */
 let results = [];
 places.forEach(place=>{   /*place : المكان الحالي الذي يتم فحصه */
-let score = 0;
+let score =0;
 
-if(place.budget == Budget){ score++; }
-if(place.weather == Weather){ score++; }
-if(place.activity.includes(Activity)){ score++;}
-if(place.type.includes(Type)){ score++; }
-if(place.camping == Camping){ score++; }
+     if(place.budget == Budget){ score++; }
+     if(place.weather == Weather){ score++; }
+     if(place.activity.includes(Activity)){ score++;}
+     if(place.type.includes(Type)){ score++; }
+     if(place.camping == Camping){ score++; }
 
-if(score>=3){ results.push(place); }
+     if(score>=3){ results.push(place); }
 });
+
 
 
 
 /*عرض النتيجة */
 let output = "";
+if(results.length==0){output=`<h5> No destinations match your preferences , try again</h5>`;}
+else{
 results.slice(0,6).forEach(place => {
     output += `
     <div class="place-card">
@@ -61,6 +64,7 @@ results.slice(0,6).forEach(place => {
     </div>
     `;
 });
+}
 document.getElementById("result").innerHTML = output;
 
 
